@@ -1,4 +1,6 @@
-There are also a few opinionated changes to config files, notably with Prettier, that included because I liked them.
+# vue-backend-plugin
+
+A Vue CLI plugin that adds a backend server, SCSS globals, Typescript, and makes stylistic changes to prettier.
 
 ### Recomended usage
 
