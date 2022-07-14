@@ -1,0 +1,36 @@
+$bg: hsl(0, 0%, 100%);
+$bgAlt: hsl(0, 0%, 97.5%);
+$fg: hsl(0, 0%, 20%);
+$fgAlt: hsl(0, 0, 40%);
+$color: hsl(153, 47%, 49%);
+
+$pad: 0.2rem;
+$br: 0.2rem;
+
+@mixin ms-depth($amount) {
+  box-shadow: 0 ceil(10 * 0.404 * $amount + 0.178) * 0.1 + 0px ceil(10 * 0.904 * $amount + 0.178) * 0.1 + 0px 0
+      rgba(0, 0, 0, ceil(10 * 0.0036 * $amount + 0.152) * 0.1 + 0),
+    0 ceil(10 * 0.0768 * $amount + 0.0544) * 0.1 + 0px ceil(10 * 0.227 * $amount + 0.177) * 0.1 + 0px 0
+      rgba(0, 0, 0, ceil(10 * 0.00152 * $amount + 0.136) * 0.1 + 0);
+}
+
+body {
+  max-width: 720pt;
+  margin: 60px auto;
+
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  background-color: $bg;
+  color: $fg;
+}
+
+a {
+  color: $color;
+  text-decoration: none;
+  font-style: italic;
+  &:hover {
+    text-decoration: underline;
+  }
+}

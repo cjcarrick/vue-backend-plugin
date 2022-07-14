@@ -1,0 +1,28 @@
+{
+  "useConfigFiles": false,
+  "plugins": {
+    "@vue/cli-plugin-typescript": {
+      "classComponent": false
+    },
+    "@vue/cli-plugin-eslint": {
+      "config": "prettier",
+      "lintOn": ["save"]
+    }
+  },
+  "configs": {
+    "vue": {
+      "devServer": {
+        "proxy": "http://localhost:3001"
+      },
+      "css": {
+        "loaderOptions": {
+          "scss": {
+            "additionalData": "@import \"@/assets/index.scss\";"
+          }
+        }
+      }
+    }
+  },
+  "vueVersion": "3",
+  "cssPreprocessor": "dart-sass"
+}
